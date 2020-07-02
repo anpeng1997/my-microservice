@@ -1,0 +1,22 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 940022691@qq.com
+    password: wlemdjhtnfvibcbg
+    default-encoding: utf-8
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+  rabbitmq:
+    addresses: 127.0.0.1
+    username: root
+    password: root
+    port: 5672
+
+mail:
+  from:
+    addr: 940022691@qq.com
