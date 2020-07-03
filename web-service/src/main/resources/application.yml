@@ -7,3 +7,19 @@ spring:
     username: root
     password: root
     port: 5672
+  redis:
+    host: localhost
+    #集群配置
+    #cluster:
+      #nodes: 198.168.0.1,192.168.0.2
+    port: 6379
+    jedis:
+      pool:
+        # 最大可用连接数（默认为8，负数表示无限）
+        max-active: 8
+        # 最大空闲连接数（默认为8，负数表示无限）
+        max-idle: 8
+        # 最小空闲连接数（默认为0，该值只有为正数才有作用）
+        min-idle: 0
+        # 从连接池中获取连接最大等待时间（默认为-1，单位为毫秒，负数表示无限）
+        max-wait: -1
